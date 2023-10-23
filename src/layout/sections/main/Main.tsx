@@ -27,22 +27,15 @@ export const Main = () => {
   );
 };
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
   min-height: 100vh;
-  background-color: #a5cfb2;
 `;
 
-const MainTitle = styled.h1`
-  color: red;
-`;
+const MainTitle = styled.h1``;
 
-const MainName = styled.h2`
-  color: green;
-`;
+const MainName = styled.h2``;
 
-const MainText = styled.p`
-  color: blue;
-`;
+const MainText = styled.p``;
 
 const Photo = styled.img`
   width: 533px;

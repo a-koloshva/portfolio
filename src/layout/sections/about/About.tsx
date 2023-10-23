@@ -19,9 +19,6 @@ export const About = () => {
 
 const StyledAbout = styled.section`
   min-height: 100vh;
-  background-color: #ccb686;
 `;
 
-const StyledText = styled.p`
-  color: green;
-`;
+const StyledText = styled.p``;
