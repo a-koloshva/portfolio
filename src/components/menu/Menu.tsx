@@ -7,9 +7,9 @@ export const Menu = (props: { menuItems: Array<string> }) => {
       <ul>
         {props.menuItems.map((item, index) => {
           return (
-            <li key={index}>
-              <a href="">{item}</a>
-            </li>
+            <ListItem key={index}>
+              <Link href="">{item}</Link>
+            </ListItem>
           );
         })}
       </ul>
@@ -22,4 +22,14 @@ const StyledMenu = styled.nav`
     display: flex;
     gap: 30px;
   }
+`;
+
+const ListItem = styled.li``;
+
+const Link = styled.a`
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #1f2626;
 `;
