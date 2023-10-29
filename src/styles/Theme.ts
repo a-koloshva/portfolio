@@ -1,10 +1,10 @@
 export const theme = {
   colors: {
-    primaryBg: '#FAFAFA',
-    accent: '#5222D0',
-    accentText: '#DBFFFF',
+    primaryBg: '#E8ECF4',
+    accent: '#FDC435',
+    accentText: '#FDC435',
 
-    title: '#151717',
-    text: '#1F2626',
+    main: '#25282B',
+    text: '#828282',
   },
 };

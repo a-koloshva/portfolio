@@ -12,13 +12,13 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
   margin: 0;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  color: ${theme.colors.text};
+  color: ${theme.colors.main};
   line-height: 1.2;
 }
 
@@ -37,6 +37,7 @@ button {
 
 section {
   background-color: ${theme.colors.primaryBg};
+  padding: 0 0 144px 0;
 }
 
 

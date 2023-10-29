@@ -2,30 +2,34 @@ import React from 'react';
 import styled from 'styled-components';
 import photo from '../../../assets/images/avatar.webp';
 import { FlexWrapper } from '../../../components/FlexWrapper';
-import { Icon } from '../../../components/icon/Icon';
 import { Container } from '../../../components/Container';
+import { Button } from '../../../components/Button';
+import { theme } from '../../../styles/Theme';
 
 export const Main = () => {
   return (
     <StyledMain>
       <Container>
         <FlexWrapper align={'center'} justify={'space-between'}>
-          <div>
-            <MainTitle>A Web Developer.</MainTitle>
-            <MainName>Andrey Koloshva</MainName>
+          <MainContent>
+            <MainTitle>FrontEnd Developer</MainTitle>
+            <MainName>Hello, my name is Andrey Koloshva</MainName>
             <MainText>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
               officia consequat duis enim velit mollit. Exercitation veniam consequat sunt.
             </MainText>
-          </div>
+            <ButtonWrapper>
+              <Button as="a" href={'#'} primary>
+                Projects
+              </Button>
+              <Button as="a" href={'#'} outlined>
+                LinkedIn
+              </Button>
+            </ButtonWrapper>
+          </MainContent>
 
           <Photo src={photo} alt="" />
         </FlexWrapper>
-        <div>
-          <Arrow href="">
-            <Icon iconId={'arrowSvg'} />
-          </Arrow>
-        </div>
       </Container>
     </StyledMain>
   );
@@ -36,15 +40,41 @@ const StyledMain = styled.section`
   display: flex;
 `;
 
-const MainTitle = styled.h1``;
+const MainContent = styled.div`
+  max-width: 508px;
+`;
 
-const MainName = styled.h2``;
+const MainTitle = styled.h1`
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: ${theme.colors.accentText};
+  margin-bottom: 12px;
+`;
 
-const MainText = styled.p``;
+const MainName = styled.h2`
+  font-family: Roboto;
+  font-size: 64px;
+  font-weight: 700;
+  color: #333333;
+`;
+
+const MainText = styled.p`
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: ${theme.colors.text};
+  margin: 32px 0;
+`;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  gap: 12px;
+`;
 
 const Photo = styled.img`
   width: 533px;
   object-fit: cover;
 `;
-
-const Arrow = styled.a``;
