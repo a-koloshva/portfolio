@@ -30,6 +30,7 @@ const StyledSkill = styled.div`
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  /* padding-bottom: 80px; */
 `;
 
 const SkillTitle = styled.h3`

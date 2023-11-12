@@ -41,7 +41,7 @@ const StyledMain = styled.section`
 `;
 
 const MainContent = styled.div`
-  max-width: 508px;
+  max-width: 511px;
 `;
 
 const MainTitle = styled.h1`

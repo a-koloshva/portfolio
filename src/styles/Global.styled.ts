@@ -40,5 +40,4 @@ section {
   padding: 0 0 144px 0;
 }
 
-
 `;

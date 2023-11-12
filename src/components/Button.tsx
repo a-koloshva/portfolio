@@ -9,7 +9,7 @@ type ButtonPropsType = {
 export const Button = styled.button<ButtonPropsType>`
   border: none;
   border-radius: 8px;
-  padding: 6px 24px;
+  padding: 8px 24px;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 500;
