@@ -11,16 +11,16 @@ export const Skills = () => {
       <Container>
         <SectionTitle>Skills</SectionTitle>
         <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'} gap={'80px 0px'}>
-          <Skill iconId={'vscode'} title={'VScode'} width={'112px'} height={'120px'} />
+          <Skill iconId={'vscode'} title={'VScode'} width={'120px'} height={'120px'} />
           <Skill iconId={'html'} title={'HTML'} width={'120px'} height={'120px'} />
           <Skill iconId={'css'} title={'CSS'} width={'120px'} height={'120px'} />
           <Skill iconId={'js'} title={'Javascript'} width={'120px'} height={'120px'} />
-          <Skill iconId={'react'} title={'ReactJS'} width={'113px'} height={'120px'} />
-          <Skill iconId={'vscode'} title={'VScode'} width={'112px'} height={'120px'} />
-          <Skill iconId={'html'} title={'HTML'} width={'120px'} height={'120px'} />
-          <Skill iconId={'css'} title={'CSS'} width={'120px'} height={'120px'} />
-          <Skill iconId={'js'} title={'Javascript'} width={'120px'} height={'120px'} />
-          <Skill iconId={'react'} title={'ReactJS'} width={'113px'} height={'120px'} />
+          <Skill iconId={'react'} title={'ReactJS'} width={'120px'} height={'120px'} />
+          <Skill iconId={'redux'} title={'Redux'} width={'120px'} height={'120px'} />
+          <Skill iconId={'sass'} title={'Sass'} width={'120px'} height={'120px'} />
+          <Skill iconId={'bootstrap'} title={'Bootstrap'} width={'89px'} height={'120px'} />
+          <Skill iconId={'git'} title={'Git'} width={'106px'} height={'120px'} />
+          <Skill iconId={'github'} title={'Github'} width={'88px'} height={'120px'} />
         </FlexWrapper>
       </Container>
     </StyledSkills>
@@ -28,9 +28,3 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section``;
-
-const StyledSkillsRow = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-`;

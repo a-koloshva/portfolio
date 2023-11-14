@@ -4,6 +4,7 @@ import { theme } from '../styles/Theme';
 type ButtonPropsType = {
   primary?: boolean;
   outlined?: boolean;
+  round?: boolean;
 };
 
 export const Button = styled.button<ButtonPropsType>`
@@ -28,5 +29,14 @@ export const Button = styled.button<ButtonPropsType>`
       background-color: transparent;
       color: ${theme.colors.main};
       border: 2px solid ${theme.colors.main};
+    `}
+
+  ${(props) =>
+    props.round &&
+    css<ButtonPropsType>`
+      background-color: transparent;
+      color: ${theme.colors.main};
+      border: 1px solid ${theme.colors.main};
+      border-radius: 24px;
     `}
 `;
