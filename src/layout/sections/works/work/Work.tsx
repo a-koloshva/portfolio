@@ -29,6 +29,7 @@ const StyledWork = styled.div`
   width: 100%;
   display: flex;
   border-radius: 24px;
+  overflow: hidden;
 `;
 
 const WorkContent = styled.div`
@@ -43,7 +44,7 @@ const WorkContent = styled.div`
 
 const Image = styled.img`
   width: 50%;
-  height: 388px;
+  height: 530px;
   object-fit: cover;
 `;
 

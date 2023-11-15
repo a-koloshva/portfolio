@@ -11,7 +11,7 @@ export const Works = () => {
     <StyledWorks>
       <Container>
         <SectionTitle>My Works</SectionTitle>
-        <FlexWrapper direction={'column'}>
+        <FlexWrapper direction={'column'} gap={'80px 0'}>
           <Work
             title={'title project'}
             src={socialImg}
@@ -40,5 +40,9 @@ export const Works = () => {
 };
 
 const StyledWorks = styled.section`
-  /* min-height: 100vh; */
+  ${FlexWrapper} {
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+  }
 `;
